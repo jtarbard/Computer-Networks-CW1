@@ -4,9 +4,6 @@ import java.net.UnknownHostException;
 
 public class Coursework1 {
 
-    private String filter;
-    private InetAddress inet;
-
     public Coursework1(String filter, String hostname) {
         validateFilter(filter);
         InetAddress host = validateHostname(hostname);
