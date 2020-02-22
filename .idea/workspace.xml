@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7840af7a-1781-4f67-9064-af0a720e09b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YAqaRKB4pCrld2ZXUBXuEFZQgp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Coursework1" type="Application" factoryName="Application" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coursework1" />
+      <module name="Coursework1" />
+      <option name="PROGRAM_PARAMETERS" value="124.11.129.0 dns6.leeds.ac.uk." />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Coursework1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7840af7a-1781-4f67-9064-af0a720e09b3" name="Default Changelist" comment="" />
+      <created>1582395809756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582395809756</updated>
+      <workItem from="1582395811207" duration="8740000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="124" width="799" height="839" key="#Coursework1" timestamp="1582406101000">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state x="555" y="124" width="799" height="839" key="#Coursework1/0.35.1920.1003@0.35.1920.1003" timestamp="1582406101000" />
+    <state x="455" y="117" width="1000" height="846" key="#Project_Structure" timestamp="1582396064211">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state x="455" y="117" width="1000" height="846" key="#Project_Structure/0.35.1920.1003@0.35.1920.1003" timestamp="1582396064211" />
+    <state x="414" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582405564029">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state x="414" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.35.1920.1003@0.35.1920.1003" timestamp="1582405564029" />
+    <state width="1862" height="304" key="GridCell.Tab.0.bottom" timestamp="1582406087147">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.0.bottom/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087147" />
+    <state width="1862" height="304" key="GridCell.Tab.0.center" timestamp="1582406087146">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.0.center/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087146" />
+    <state width="1862" height="304" key="GridCell.Tab.0.left" timestamp="1582406087146">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.0.left/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087146" />
+    <state width="1862" height="304" key="GridCell.Tab.0.right" timestamp="1582406087146">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.0.right/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087146" />
+    <state width="1862" height="304" key="GridCell.Tab.1.bottom" timestamp="1582406087014">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.1.bottom/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087014" />
+    <state width="1862" height="304" key="GridCell.Tab.1.center" timestamp="1582406087014">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.1.center/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087014" />
+    <state width="1862" height="304" key="GridCell.Tab.1.left" timestamp="1582406087014">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.1.left/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087014" />
+    <state width="1862" height="304" key="GridCell.Tab.1.right" timestamp="1582406087014">
+      <screen x="0" y="35" width="1920" height="1003" />
+    </state>
+    <state width="1862" height="304" key="GridCell.Tab.1.right/0.35.1920.1003@0.35.1920.1003" timestamp="1582406087014" />
+  </component>
+</project>
