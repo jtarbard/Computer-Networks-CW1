@@ -12,7 +12,7 @@ public class Coursework1 {
 
     private void validateFilter(String filter){
         String ip[] = filter.split("\\.");
-        //determine user error
+        //validates IPv4 address
         if(ip.length > 4){
             throw new java.lang.RuntimeException("IPv4 address is too long: format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'.");
         }
@@ -20,7 +20,7 @@ public class Coursework1 {
             throw new java.lang.RuntimeException("IPv4 address is too short: format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'.");
         }
         else if(filter.matches(".*[^\\d.\\*].*")){
-            throw new java.lang.RuntimeException("IPv4 address contains an invalid character: format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'.");
+            throw new java.lang.RuntimeException("IPv4 address contains invalid character(s): format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'.");
         }
         else if(filter.matches(".*\\*\\.\\d.*")){
             throw new java.lang.RuntimeException("IPv4 address has invalid format: wildcard followed by an integer not permitted.");
@@ -29,7 +29,7 @@ public class Coursework1 {
             for(String i : ip){
                 if(!i.contains("*")){
                     if (Integer.parseInt(i) > 255) {
-                        throw new java.lang.RuntimeException("IPv4 address has over-sized integer: format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'");
+                        throw new java.lang.RuntimeException("IPv4 address has over-sized integer(s): integers should range from 0 to 255.");
                     }
                 }
             }
@@ -44,16 +44,16 @@ public class Coursework1 {
                 return inet;
             }
             else {
-                throw new java.lang.RuntimeException("Hostname resolved to IPv6 address when IPv4 required.");
+                throw new java.lang.RuntimeException("Hostname resolved to IPv6 address: IPv4 address required.");
             }
         }
         catch(UnknownHostException e){
-            throw new java.lang.RuntimeException("Unknown hostname.");
+            throw new java.lang.RuntimeException("IPv4 addressed could not be resolved: unknown hostname.");
         }
     }
 
     private boolean compareFilterAndHostname(String filter, InetAddress inet){
-        //Returns true if the hostname either matches the filter, or belongs to the range of addresses specified by the filter false otherwise.
+        //Returns true if the hostname either matches/belongs to the filter returns false otherwise.
         String ipv4 = inet.getHostAddress();
         if(ipv4.matches(filter)){
             return true;
@@ -68,7 +68,7 @@ public class Coursework1 {
             Coursework1 lookup = new Coursework1(args[0], args[1]);
         }
         catch(ArrayIndexOutOfBoundsException e){
-            throw new java.lang.RuntimeException("Expected arguments not provided.");
+            throw new java.lang.RuntimeException("Expected arguments not provided: IPv4 filter and hostname expected.");
         }
     }
 }
