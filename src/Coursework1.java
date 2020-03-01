@@ -1,18 +1,30 @@
-import java.net.Inet4Address;
+import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class Coursework1 {
 
-    public Coursework1(String filter, String hostname) {
-        validateFilter(filter);
-        InetAddress host = validateHostname(hostname);
-        System.out.println(compareFilterAndHostname(filter, host));
+    private String filter = "";
+    private String hostname = "";
+    private InetAddress inet;
+    private Boolean match = Boolean.FALSE;
+
+
+    public Coursework1(String argFilter, String argHostname) {
+        //initialise fields
+        setFilter(argFilter);
+        setHostname(argHostname);
+        setInetAddress();
+        setMatch();
     }
 
-    private void validateFilter(String filter){
+    private void setFilter(String pFilter){
+        //set filter
+        filter = pFilter;
+
+        //validate filter
         String ip[] = filter.split("\\.");
-        //validates IPv4 address
+
         if(ip.length > 4){
             throw new java.lang.RuntimeException("IPv4 address is too long: format should be 'a.b.c.d' where a, b, c, d are integers from 0 to 255 or wildcards '*'.");
         }
@@ -36,14 +48,15 @@ public class Coursework1 {
         }
     }
 
-    private InetAddress validateHostname(String hostname){
+    private void setHostname(String parHostname){
+        hostname = parHostname;
+    }
+
+    private void setInetAddress(){
         //converts the hostname to an instance of InetAddress and checks hostname resolved to an IPv4 address.
         try {
-            InetAddress inet = InetAddress.getByName(hostname);
-            if (inet instanceof Inet4Address) {
-                return inet;
-            }
-            else {
+            inet = InetAddress.getByName(hostname);
+            if (inet instanceof Inet6Address) {
                 throw new java.lang.RuntimeException("Hostname resolved to IPv6 address: IPv4 address required.");
             }
         }
@@ -52,20 +65,28 @@ public class Coursework1 {
         }
     }
 
-    private boolean compareFilterAndHostname(String filter, InetAddress inet){
-        //Returns true if the hostname either matches/belongs to the filter returns false otherwise.
+    private void setMatch(){
         String ipv4 = inet.getHostAddress();
-        if(ipv4.matches(filter)){
-            return true;
+        //Returns true if the hostname either matches/belongs to the filter returns false otherwise.
+        if(filter.matches("^(\\*).*")){
+            match = true;
+        }
+        else if(ipv4.matches(filter)){
+            match = true;
         }
         else{
-            return false;
+            match = false;
         }
+    }
+
+    public boolean getMatch(){
+        return match;
     }
 
     public static void main(String[] args) {
         try {
             Coursework1 lookup = new Coursework1(args[0], args[1]);
+            System.out.println(lookup.getMatch());
         }
         catch(ArrayIndexOutOfBoundsException e){
             throw new java.lang.RuntimeException("Expected arguments not provided: IPv4 filter and hostname expected.");
